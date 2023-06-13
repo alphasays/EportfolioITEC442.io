@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tools.html">Scanning Tools</a></li>
+            <li><a href="honeypot.html">HoneyPot</a></li>
+            <li><a href="ddos.html">DDoS Attack</a></li>
+            <li><a href="digital.html">Digitalization</a></li>
+            <li><a href="owasp.html">OWASP Top 10</a></li>
+            <li><a href="ieee.html">IEEE Top 10</a></li>
+            <li><a href="solar.html">SolarWinds Article</a></li>
+            <li><a href="seminar.html">Seminar</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="section">
+
+            <h3>To to SYN DDS</h3>
+            <p>
+                SYN flooding is a type of Denial of Service (DoS) attack that disrupts the functioning of a network or
+                website by overwhelming it with a flood of SYN requests which results to exhausting its resources making
+                it to stop working or responding. The attack exploits the TCP three-way handshake process, which is used
+                to establish a connection between a client and a server.
+            </p>
+            <p>
+
+                During the three-way handshake, the client sends a SYN (synchronize) packet to the server, and the
+                server responds with a SYN-ACK (synchronize-acknowledge) packet. The client then sends an ACK
+                (acknowledge) packet to complete the connection. In a SYN flooding attack, the attacker sends a large
+                number of SYN packets to the target system, but either does not respond to the SYN-ACK packets or sends
+                spoofed source IP addresses.
+                Here is an example picture to illustrate the process.
+
+            </p>
+
+            <h3>How I perfumed SYN using Metasploit?</h3>
+            <p>
+                I started by identifying my target website which rightnow.com.tr a website I build for my graduation
+                project. I used ping on mac Terminal with slight title adjustment to remain it. The PING rightnow.com.tr
+                displayed (185.46.40.47) as the ip address which I would use for the next step then got I got 56 as data
+                bytes with additional request details as seen below.
+            </p>
+            <p>
+                It is essential to remember that honeypots should not be relied upon as the sole security measure, as
+                cybercriminals can adapt and find ways to circumvent them. However, when implemented effectively
+                alongside
+                other security measures, honeypots can serve as an invaluable tool in detecting and mitigating attacks,
+                gaining insights into attacker behavior, and improving overall security posture.
+            </p>
+            <p>
+                On Kali Terminal I typed msconsole to launch metaploit since I already know my site ip which is
+                185.46.40.47 <br>
+
+
+                Followed by using the selected "auxiliary/dos/TCP/synflood" done by typing the following command Msf6 >
+                use auxiliary/dos/tcp/synflood
+                Msf6> show options <br>
+
+                Now we have all options available that we can configure. To set an option just you have to typeset and
+                the option name and option.
+                You have to set two main option<br>
+                RHOST= target IP Address <br>
+                RPORT= target PORT Address <br>
+                Set RPORT 18.192.182.30
+            </p>
+            <h2>Set RPORT 80</h2>
+            <p>At the final phase I launched the attack by typing: exploit to check the packets I could open on
+                Wireshark.</p>
+            <h2>Reflection Peace:</h2>
+            <p>Challenges: This part of the hardest challenge I went through during my activities. At first I tried
+                doing it during the class and didn’t work due to certain restriction of some of the computers at the lap
+                but I had a support from one of my classmates, it worked on another computer but I forgot to save the
+                pictures until the lab PC restarted making me loss the work, at home using a friends computer that also
+                gave me some challenges, since my laptop was a mac and my storage left is 128GB, running virtual box was
+                another nightmare as my remaining storage was just 8.GB with my core files and application.
+
+            </p><br>
+            <p>Other lessons learned: A cyber-attach that by a WannaCry ransomware leading to disrupting more than 80
+                hospitals and costing the government an estimated $90 million and more than 60 trusts within the United
+                Kingdom’s National Health Service (NHS) has spread to more than 200 000 computer systems in 150
+                countries, including Canada. One hospital in Ontario — Lakeridge Health in Oshawa — reported that its
+                computer system was threatened by the ransomware disabling their Smart System in 2018. Although this was
+                a Malware ransomware, but it had other attacks features such Kill Chain and Supply Chain attack since it
+                started from 2016 from reports states 2015. The result of this was of Denial of Service attach because
+                their system completely stopped working due to the attack. <br> On the hand I also learned about HIPAA -
+                The
+                Health Insurance Portability and Accountability Act. This defines the security and privacy regulations
+                required to protect sensitive patient health information. Specifically, the Act addresses requirements
+                for handling protected health information (PHI) and electronic protected health information (ePHI). A
+                photo below illustrates how this works. Early this month, The US President Joe Biden’s son Hunter Biden
+                laptop leaked data was published online and due to the sensitivity and it’s political affiliation the
+                FBI immediately attacked the website with Denial of Service (DoS) making the site not work at all so the
+                public can’t access it.
+
+            </p>
+
+            <h2>HIPAA - The Health Insurance Portability and Accountability Act</h2>
+
+            <p>Defines the security and privacy regulations required to protect sensitive patient health information.
+                Specifically, the Act addresses requirements for handling protected health information (PHI) and
+                electronic protected health information (ePHI).
+            </p>
+            <p>An Example is the UK NSHS attack in 2018.</p>
+            <p>A Quick-Response Checklist from the HHS,</p>
+
+            <p class="source"><a
+                    href="https://www.hhs.gov/hipaa/for-professionals/security/guidance/cybersecurity/index.html">https://www.hhs.gov/hipaa/for-professionals/security/guidance/cybersecurity</a>
+            </p>
+            <p>US Department of Health, Office for Civil Rights (OCR)</p>
+            <p class="source"><a
+                    href="https://www.hhs.gov/sites/default/files/cyber-attack-checklist-06-2017.pdf">https://www.hhs.gov/sites/default/files/cyber-attack-checklist-06-2017</a>
+            </p>
+        </div>
+        <div class="image">
+            <center><img src="images/ddos1.png"></center>
+        </div>
+
+    </div>
+</body>
+
+</html>

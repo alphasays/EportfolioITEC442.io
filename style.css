@@ -1,0 +1,120 @@
+body {
+    background-color: rgb(209, 238, 228);
+}
+
+.sidebar {
+    background-color: #071041;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar a:hover {
+    background-color: rgb(209, 238, 228);
+    color: black;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.info {
+    width: 100%;
+}
+
+.info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.info h2 {
+    margin-bottom: 10px;
+}
+
+.info p {
+    margin: 0;
+}
+
+.info strong {
+    font-weight: bold;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2,
+.section h3 {
+    margin-bottom: 10px;
+}
+
+.section p {
+    margin: 0;
+}
+
+.section ol {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.section ol li {
+    margin-bottom: 3px;
+}
+
+.section ol p {
+    margin-bottom: 10px;
+    font-style: oblique;
+    font-weight: bold;
+
+}
+
+
+ol {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.section .source {
+    font-style: italic;
+    color: #888;
+}
+
+.image img {
+    margin: 20px 5px;
+    height: 500px;
+    width: 600px;
+
+}
+
+.highlighted {
+    background-color: yellow;
+}
+
+.sem img {
+    display: inline;
+    height: 180px;
+    width: auto;
+}

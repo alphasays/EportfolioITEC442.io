@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tools.html">Scanning Tools</a></li>
+            <li><a href="honeypot.html">HoneyPot</a></li>
+            <li><a href="ddos.html">DDoS Attack</a></li>
+            <li><a href="digital.html">Digitalization</a></li>
+            <li><a href="owasp.html">OWASP Top 10</a></li>
+            <li><a href="ieee.html">IEEE Top 10</a></li>
+            <li><a href="solar.html">SolarWinds Article</a></li>
+            <li><a href="seminar.html">Seminar</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="section">
+            <h2>Lecture One: Scanning Tools</h2>
+            <p>
+                Perform a basic scan using standard tools such as traceroute, dig, and nslookup.
+            </p>
+            <p>
+                Scanning tools help us understand our network information by giving us data on the incoming and outgoing
+                communication through the bits and its ports. Since a computer network layer performs various activities
+                through the transmission of data from one host to another, located in different networks, packets get
+                sent as Information Form (Data Unit) which the router as a device takes the next action. In the popular
+                network field, it’s said, "The network is known as the backbone of the telecommunication system which is
+                used to share data and resources using data links."
+            </p>
+            <p>
+                Beyond finding information about our network through scanning tools, it’s also a great tool for
+                vulnerability testing, which helps users find information on weak communication links that, if not
+                monitored well and secured, could lead to network attacks.
+            </p>
+            <p>
+                In this lab activity, I will share some of the tools we used during our lab activities, the outcome of
+                the activities, the things we learned, and a few tips to help you better understand the good and bad
+                side of scanning tools.
+            </p>
+            <p>
+                During this lab activity, the first tool we used was ping, which shows the internet status seen in the
+                images below. Then we tried ipconfig through the command line prompt and discovered the computer's
+                detailed IP configuration, further exploring various scanning tools.
+            </p>
+            <h3>Reflection:</h3>
+            <p>
+                Scanning tools, being tools to discover network communication information, can also mean network
+                vulnerability. Also, one should not freak out when they see so many ports opened in their network or the
+                sites they’re accessing. The work involved in this OSI layer model is too complex for a human to
+                comprehend and manually attempt to manage so many ports, as thousands or millions of packets operate in
+                the TCP/IP based on the network size. For the questions I had to use other websites to get EMU host
+                details which made me discover other ways to do find out website details, the emu hosting details is
+                different on different
+                site, some shows Turkey like Nsloookup.io and others Nicosia, I believe it has to do with various
+                applications, cloud servers, local servers and backup
+                servers. I also learned if the information of a domain is restricted on one site, another site with more
+                powerful tools can help you discover the information you are looking for. In Summary one can never hide
+                their domain information 100%. I was also using a mac which makes some features limited and more complex
+                and
+                I had to use a friends computer to perform some this activites.
+
+            </p>
+
+            <div class="sem">
+                <img src="images/t1.jpg" alt="">
+                <img src="images/t2.png" alt="">
+                <img src="images/t3.png" alt="">
+                <img src="images/t4.png" alt="">
+            </div>
+            <h3>QUESTION?</h3>
+            <ol>
+                <li>How many hops from your machine to your assigned website?</li>
+                <p>Traceroute to emu.edu.tr: 30 hops</p>
+                <li>Which step causes the biggest delay in the route? What is the average duration of that delay?</li>
+                <p>To gold-surf.com, 168ms</p>
+                <li>What are the main nameservers of that network?</li>
+                <p>ns1.emu.edu.tr</p>
+                <li>Who is the registered contact?</li>
+                <p>administrator.emu.edu.tr</p>
+                <li>What is the MX record for the website?</li>
+                <p>Non-authoritative answer: emu.edu.tr MX preference = 0, mail exchanger =
+                    emu-edu-tr.mail.protection.outlook.com Server ip 104.47.1.3 Microsoft Corporation (AS8075)</p>
+                <li>Where is the website hosted?</li>
+                <p> Nicosia, Cyprus at National Academic Network and Information Center </p>
+            </ol>
+        </div>
+
+    </div>
+</body>
+
+</html>

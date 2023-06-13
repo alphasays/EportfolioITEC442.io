@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tools.html">Scanning Tools</a></li>
+            <li><a href="honeypot.html">HoneyPot</a></li>
+            <li><a href="ddos.html">DDoS Attack</a></li>
+            <li><a href="digital.html">Digitalization</a></li>
+            <li><a href="owasp.html">OWASP Top 10</a></li>
+            <li><a href="ieee.html">IEEE Top 10</a></li>
+            <li><a href="solar.html">SolarWinds Article</a></li>
+            <li><a href="seminar.html">Seminar</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="section">
+            <h2>Lab 2 HoneyPot</h2>
+            <p>
+                To my literature point of view: Like the name honey being sweet makes people with sweet tooth struggle
+                to stay away from, in another perspective beehives containing a lot of honey is protected from theft and
+                the bees attack after detecting an intruder more like a trap. HoneyPot equally being set up as trap lure
+                attackers / hackers into their own pandora box as security mechanism through a virtual computer or
+                decoy. To reiterate this fools’ intruders into believing that they are succeeding in their plans by
+                exploiting a system vulnerability while their actions are being monitored and studied to improve
+                security policies, then subsequently put stronger mechanisms to counter cyberattacks. HoneyPot is a
+                perfect example of revised Cyber Kill Chain (More info in Cyber Kill Chain here)
+            </p>
+            <h3>How to set up HoneyPot and how does it work.</h3>
+            <p>
+                Honeypot can be configured to any computing resource from software and networks to file servers and
+                routers. In the most common cases, it is set up as virtual machines on a physical computer and what this
+                does is to allow the computer to run programs and deploy apps where it resides on. An example of this
+                VMware, Oracle VM VirtualBox or Kali Linux which we used during our ITEC 442 labs activities here are
+                the details:
+            </p>
+            <div class="image">
+                <center><img src="images/h1.jpg"></center>
+            </div>
+            <h2>Some types of honeypots and how they work:</h2>
+            <ul>
+                <li>
+                    <h3>Deployment types include:</h3>
+                    <ul>
+                        <li><strong>Pure honeypots—</strong> These are less sophisticated honeypots and can run easily
+                            on any virtual
+                            machines. Its primary purpose is to monitor intruders and trap them like prisoners through
+                            the links connected to the honeypot network.</li>
+                        <li><strong>Low-interaction honeypots—</strong> This is more like adware type where it behaves
+                            in ways that
+                            hackers find a services or system attractive, more like seducing them in other words, to
+                            collect data from attackers with their own tools like botnets, malware, and worms.</li>
+                        <li><strong>High-interaction honeypots—</strong> This deployment honeypot is sophisticated to an
+                            enterprise level
+                            of production infrastructure. In this type, cybercriminals are not very restricted on the
+                            things they can do to ensure attackers are able to dive deeper into their intrusion agenda.
+                            But this requires experts to handle as it leaves the honey very vulnerable. Regardless of
+                            allowing attackers to have high interaction, these systems are still set up on virtual
+                            machines to prevent access to the actual system.</li>
+                    </ul>
+                </li>
+                <h3>Other types of honeypots include:</h3>
+                <ul>
+                    <li><strong>Email traps or spam traps:</strong> targets spam messages and source IP to add to auto
+                        deny to prevent
+                        incoming spam mails from the same source.</li>
+                    <li><strong>Decoy database:</strong> Helps to detect attacks targeting SQL database and related
+                        system frameworks in
+                        honeypot.</li>
+                    <li><strong>Malware honeypot:</strong> A low-interaction honeypot deployment that attracts malware
+                        attacks by
+                        mimicking software apps and APIs.</li>
+                    <li><strong>A spider honeypot:</strong> With the growing number of websites, web crawlers are
+                        equally growing,
+                        especially that malicious bots learn nasty ways, downloads, and indexes content from all over
+                        the Internet unlike the actual legit Web Crawlers like Google, Bing, and the rest. Spider
+                        honeypots can monitor and detect such and block it, including ad-network crawlers.</li>
+                </ul>
+            </ul>
+            <h3>Reflection Piece:</h3>
+            <p>
+                Honeypot, being a tool to trap intrusion by cybercriminals, is also a tool to learn how these hacks work
+                in a safe virtual environment, which I have learned. Furthermore, I understood that it helps us discover
+                vulnerabilities, perform penetration tests, study them, and find ways to put security measures in place
+                to prevent cyberattacks. This can be done by tracing cybercriminal location activities, assessing the
+                severity of the threats they expose our systems or networks to, understanding the methods and resources
+                intruders are using to carry out their attacks, and determining their end goals in carrying out these
+                attacks. As shown in the above-illustrated Smart Grid System on how honeypot works, IoT devices are
+                prone to attacks because they deal with so many network links of devices, and honeypots can mitigate
+                some of these attacks.
+            </p>
+            <p>
+                One of the most important things I have learned from this is that cybercriminals can equally be attacked
+                with the taste of their own medicine, which honeypots do so effortlessly if done well. Other than what I
+                have learned from the class labs, I spent additional time learning more about honeypots, which made me
+                develop a deeper interest in utilizing the application where needed if applicable.
+            </p>
+            <p>
+                Other than what I discovered from the lab activities, there are many benefits and disadvantages that I
+                have also learned, which include the following. Generally, the advantages of honeypots outweigh the
+                disadvantages, and it is a great Intrusion Detection System (IDS) tool.
+            </p>
+            <h4>Advantages:</h4>
+            <ol>
+                <li>Detect attacks on IoT devices and recommend ways to improve security.</li>
+                <li>It handles illegal traffic on a network.</li>
+                <li>Honeypot recognizes patterns like similar IP addresses and sources.</li>
+                <li>It uses light resources, and most virtual machines used for honeypots are available for free.</li>
+                <li>Generally, it has a low false rate compared to other intrusion detection systems, which can trigger
+                    high false alerts.</li>
+                <li>Many intrusion detection systems ignore internal threats or don't detect them quickly, unlike
+                    honeypots, which are very swift in that regard.</li>
+                <li>It saves time by preventing hacking of the real computer because it's virtual and a decoy.</li>
+                <li>It's always up to date with the latest information and resources on threats, attack vectors,
+                    exploits, and malware in cyberspace.</li>
+            </ol>
+            <h4>Disadvantages:</h4>
+            <ol>
+                <li>There are so many means cybercriminals direct their threats, and sometimes it's not directed to
+                    honeypots. Therefore, one or IT security shouldn't rely on it 100%.</li>
+                <li>Intruders may find out that one is using a honeypot and subsequently target another system.</li>
+                <li>Attackers may also feed honeypots inaccurate information to distract a marked honey so they can
+                    create spoofed attacks.</li>
+                <li>Another downside is that attackers could also use honeypots and weaponize them for their attacks
+                    since honeypots are just launchpads.</li>
+            </ol>
+        </div>
+        <h2>How to Perform SYN Flooding Attack with Metasploit</h2>
+        <p>
+            TCP SYN flood is a popular type of Denial of Service (DDoS) that involves attacking and exploiting the
+            normal TCP three-way handshake (SYN-Synchronize Sequence Number and Acknowledgement-ACK) between TCP Client
+            and TCP Server to consume resources on the targeted server and render it unresponsive. Any deviation from
+            the normal process produces negative results. The same applies to SYN flooding attacks using Metasploit.
+        </p>
+        <p>
+            Since this attack targets TCP/IP, attackers usually send a large number of SYN packets, surpassing the
+            normal limit, to almost all available ports on a server using fake IP addresses. This leads to the server
+            receiving multiple requests, which appear authentic and, therefore, are not prevented by the server's
+            defenses.
+        </p>
+
+
+        <div class="sem">
+            <img src="images/h2.png" alt="">
+            <img src="images/h3.png" alt="">
+            <img src="images/h4.png" alt="">
+            <img src="images/h5.png" alt="">
+        </div>
+
+        <div class="sem">
+            <img src="images/h6.png" alt="">
+            <img src="images/h7.png" alt="">
+            <img src="images/h8.png" alt="">
+            <img src="images/h9.png" alt="">
+            <img src="images/h10.png" alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>
